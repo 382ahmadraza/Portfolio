@@ -21,7 +21,13 @@ export default {
       fontFamily: {
         outfit: ['Outfit', 'sans-serif'],
       },
-      
+      boxShadow:{
+        effect : "0px 0px 15px rgba(0,255,255,0.8)"
+        // inner: "inset 0px -30px 30px -50px blue"
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
