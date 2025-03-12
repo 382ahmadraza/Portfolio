@@ -20,7 +20,7 @@ export default function About() {
                 <Title title1="About" title2="Me" />
                 <Subtitle subtitle="Fronend Developer!" />
                 <p className='my-4 text-slate-200'>
-                    I am a MERN Stack Developer, but my expertise lies in Front-end Development. I specialize in React.js, Next.js, Tailwind CSS, and Firebase, focusing on creating modern, responsive, and visually appealing web applications.  familiar with  backend technologies (like Node.js, Express.js, and MongoDB) and React Native for mobile development
+                    I am a MERN Stack Developer, but my expertise lies in Front-end Development. I specialize in React.js, Next.js, Tailwind CSS, and Firebase, focusing on creating modern, responsive, and visually appealing web applications.  familiar with  backend technologies (like Node.js, Express.js, and MongoDB) and React Native for mobile
                 </p>
                 {extra && (
                     <div>  <p className='my-2 text-slate-200'>I also participated in an AI international hackathon, as a Front-End Developer to enhance my skills and gain hands-on experience in integrating AI-driven solutions into web applications.</p></div>

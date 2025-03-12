@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import { Outfit } from 'next/font/google';
 import "./globals.css";
+import { FaLongArrowAltUp } from "react-icons/fa";
+
 // import Navbar from "./common/navbar/Navbar";
  
 
@@ -28,8 +30,9 @@ export default function RootLayout({ children , route }) {
         className={`${geistSans.variable} ${geistMono.variable} ${outfit.className} antialiased`}
       >
         {/* <Navbar/> */}
-
+        
         {children}
+
       </body>
     </html>
   );

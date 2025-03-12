@@ -15,6 +15,7 @@ export default {
         blue:"#00efff",
         gray :"#323946",
         dark:"#1f242d",
+        grad : "bg-gradient-to-b from-white to-blue/40",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
