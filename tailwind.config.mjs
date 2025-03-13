@@ -10,6 +10,8 @@ export default {
     extend: {
       screens:{
         xs : "480px" ,
+        mmd : "870px" ,
+        xmd: "930px" ,
       },
       colors: {
         blue:"#00efff",

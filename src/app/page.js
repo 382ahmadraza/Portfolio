@@ -8,7 +8,6 @@ import Services from "./sections/services/Services";
 import Projects from "./sections/projects/Projects";
 import Contact from "./sections/contact/Contact";
 import Footer from "./common/footer/Footer";
-import { FaLongArrowAltUp } from "react-icons/fa";
 
 export default function Home() {
 

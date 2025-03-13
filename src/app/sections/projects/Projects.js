@@ -19,26 +19,33 @@ export default function Projects() {
     ]
 
     return (
-        <div id='portfolio' className='text-white h-fit text-center py-16 bg-dark '>
-            <Title title1="Latest" title2="Projects" />
-            <div className='flex justify-start flex-wrap w-[95%] m-auto pl-7 mt-11 '>
-                {projects.map((item, id) => {
-                    return (
-                        <div key={id} className='group m-4 bg-gray w-[30%] h-[50%] p-4 rounded-lg shadow-effect'>
+        <div id="portfolio" className='bg-dark'>
 
-                            {/* <Link href={item.link} target='blank'> */}
-                            <div className='absolute w-[344px] h-[157px] p-1 bg-gradient-to-t from-blue/100 to-cyan group-hover:duration-[.7s]  rounded-lg hidden group-hover:block '>
-                                <p className=' text-white text-3xl font-bold text-blak'>{item.subtitle}</p>
-                                <p className='text-sm font-medium my-1'>{item.detail}</p>
-                                <Link href={item.link} target='blank'>{item.icon}</Link>
-                            </div>
-                            {/* </Link> */}
-                            <div className=' flex flex-wrap items-center border-red-400 shadow-effect rounded-lg  '>
-                                <Image src={item.img} alt={"project-logo"} className='h-full w-full  rounded-lg '></Image>
+            <div  className="text-white h-fit text-center py-16 2xl:w-[96rem] 2xl:m-auto">
+                <Title title1="Latest" title2="Projects" />
+                <div className="flex justify-start flex-wrap  md:w-[95%] lg:w-[64rem] xl:w-[74rem] 2xl:w-[90rem] m-auto md:pl-7 lg:pl-3 mt-11 w-[90%]">
+                    {projects.map((item, id) => (
+                        <div key={id}
+                            className="relative group md:m-3 xmd:m-4 bg-gray md:w-[45%] lg:w-[30%] md:h-[50%] rounded-lg shadow-effect overflow-hidden my-4  "
+                        >
+                            {/* Image */}
+                            <Image
+                                src={item.img}
+                                alt="project-logo"
+                                className="h-full w-full rounded-lg transition-transform duration-300 group-hover:scale-105"
+                            />
+
+                            {/* show on hover */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-1 xs:p-2  sm:px-5 md:p-2">
+                                <h3 className="text-white text-lg lg:text-lg font-bold xs:text-3xl  2xl:text-3xl ">{item.subtitle}</h3>
+                                <p className="text-white text-[11px] text-sm lg:mt-0 xs:text-[18px] my-1 xs:my-4 md:my-1 md:text-sm lg:my-0 lg:leading-4 xl:my-2 2xl:text-lg">{item.detail}</p>
+                                <Link href={item.link} target="_blank">
+                                    <IoMdOpen className="w-[36px] h-[36px] rounded-full p-2 bg-white text-black sm:mt-1 lg:mt-0 hover:bg-gray-200 transition" />
+                                </Link>
                             </div>
                         </div>
-                    )
-                })}
+                    ))}
+                </div>
             </div>
         </div>
     )

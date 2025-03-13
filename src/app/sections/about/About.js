@@ -12,11 +12,12 @@ export default function About() {
     const [extra, setExtra] = useState()
 
     return (
-        <div id='about' className=' text-white h-fit py-11 bg-gray flex justify-evenly items-center'>
-            <div className='h-[65% w-[40%]   '>
+        <div className='bg-gray'>
+            <div id='about' className='flex flex-wrap flex-col-reverse md:flex-row md:flex-nowrap md:px-2 justify-evenly items-center text-white h-fit py-11 sm:py-11 2xl:w-[96rem] 2xl:m-auto'>
+            <div className='w-[90%] sm:w-[60%] md:w-[40%] lg:w-[40%] h-[85%] m-auto md:m-0 '>
                 <Image src={ahmadOutline} alt='ahmad' className='bg-gray   '></Image>
             </div>
-            <div className='w-[40%] h-[85%]  '>
+            <div className='w-[90%] m-auto mt-4 md:m-0 md:w-[54%] lg:w-[40%] h-fit  '>
                 <Title title1="About" title2="Me" />
                 <Subtitle subtitle="Fronend Developer!" />
                 <p className='my-4 text-slate-200'>
@@ -38,6 +39,7 @@ export default function About() {
 
             </div>
 
+        </div>
         </div>
     )
 }

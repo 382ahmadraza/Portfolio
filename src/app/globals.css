@@ -19,5 +19,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
- 
-
+@layer components {
+  .active {
+    @apply    border-b border-blue  ;
+  }
+}
+.active {
+  color: #67e8f9 !important; /* Equivalent to Tailwind's text-cyan-300 */
+}

@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const TypingEffect = () => {
   return (
-    <h2 className="text-white text-2xl font-bold tracking-wider">
+    <h2 className="text-white text-lg font-bold xs:text-2xl  sm:tracking-wider xl:text-3xl 2xl:text-4xl">
       And I'm a{" "}
       <span className="text-cyan-300 ">
         <Typewriter
