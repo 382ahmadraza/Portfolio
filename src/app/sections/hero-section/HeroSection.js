@@ -3,7 +3,7 @@ import Words from "../../components/change-words/Words"
 import Image from 'next/image'
 import { ImFacebook } from "react-icons/im";
 import { RiTwitterFill } from "react-icons/ri";
-import { AiFillInstagram } from "react-icons/ai";
+import { FaGithub } from "react-icons/fa";
 import { ImLinkedin2 } from "react-icons/im";
 import Link from 'next/link';
 import Button from '../../components/botton/Button';
@@ -31,9 +31,9 @@ export default function HeroSection() {
                     <Link href={"https://www.twitter.com/in/382ahmadraza"} target='blank' className=' flex items-center justify-center'>
                         <RiTwitterFill />
                     </Link>
-                    <Link href={"https://www.instagram.com/in/ahmadraza161"} target='blank' className=' flex items-center justify-center '>
+                    <Link href={"https://github.com/382ahmadaraz"} target='blank' className=' flex items-center justify-center '>
 
-                        <AiFillInstagram />
+                        <FaGithub />
                     </Link>
                     <Link href={"https://www.linkedin.com/in/ahmad-raza161"} target='blank' className=' flex items-center justify-center '>
                         <ImLinkedin2 />

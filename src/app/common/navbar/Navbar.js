@@ -56,7 +56,9 @@ export default function Navbar() {
                 <ScrollLink onClick={() => setToggle(false)} to={link.href} smooth={true} duration={500} className="text-md text-center">
                   {link.name}
                 </ScrollLink>
+                <hr className="bg-blue border-none my-2 h-[1px]"/>
               </li>
+
             ))}
           </ul>
         )}
@@ -70,7 +72,6 @@ export default function Navbar() {
                   className="cursor-pointer text-white hover:text-blue-400 transition my-3" >
                   {link.name}
                 </ScrollLink>
-                <hr/>
               </li>
             ))}
           </ul>

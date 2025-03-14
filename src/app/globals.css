@@ -21,7 +21,7 @@ body {
 }
 @layer components {
   .active {
-    @apply    border-b border-blue  ;
+    @apply    border-b border-blue;
   }
 }
 .active {

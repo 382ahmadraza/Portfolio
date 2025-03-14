@@ -4,14 +4,14 @@ import Link from 'next/link'
 import { IoMdOpen } from "react-icons/io";
 import Title from '@/app/components/title/Title'
 import luxeurs from "../../assets/lux.PNG"
-import social from "../../assets/social.PNG"
+import social from "../../assets/social.png"
 import dine from "../../assets/dine.PNG"
-import notes from "../../assets/notes.PNG"
+import notes from "../../assets/notes.png"
 import rmc1 from "../../assets/race.PNG"
 
 export default function Projects() {
     const projects = [
-        { id: 1, img: luxeurs, subtitle: "Ecommerce web", detail: "Luxeurs is a stylish e-commerce platform for men's and women's fashion, offering a sleek, user-friendly shopping experience.", icon: <IoMdOpen className='w-[36px] h-[36px] rounded-full p-2 bg-white m-auto text-black ' />, link: "https://www.loom.com/share/903f4dbf1fbb4da8adf78873cbeecb21" },
+        { id: 1, img: luxeurs, subtitle: "Ecommerce web", detail: "Luxeurs is a stylish e-commerce platform for men's and women's fashion, offering a user-friendly shopping experience.", icon: <IoMdOpen className='w-[36px] h-[36px] rounded-full p-2 bg-white m-auto text-black ' />, link: "https://www.loom.com/share/903f4dbf1fbb4da8adf78873cbeecb21" },
         { id: 2, img: social, subtitle: "Social Media Web", detail: "Social media website is a dynamic platform for seamless user interaction, content sharing, and community engagement. ", icon: <IoMdOpen className='w-[36px] h-[36px] rounded-full p-2 bg-white m-auto text-black ' />, link: "https://www.loom.com/share/2adf63f448f54ccabd61d0837972c4b0" },
         { id: 3, img: dine, subtitle: "Ecommerce web", detail: " Dine Market is an online shopping site offering a wide range of products with a seamless and user-friendly experience. ", icon: <IoMdOpen className='w-[36px] h-[36px] rounded-full p-2 bg-white m-auto text-black ' />, link: "https://www.loom.com/share/cb4656a87dc54ec4839300c21104d0e8" },
         { id: 4, img: notes, subtitle: "Notes Taking App", detail: " Online notes-taking app is a fast and intuitive platform for creating, organizing, and managing notes efficiently. ", icon: <IoMdOpen className='w-[36px] h-[36px] rounded-full p-2 bg-white m-auto text-black ' />, link: "https://www.loom.com/share/c38a512e988846698e9bf645bed68c01" },
@@ -23,10 +23,10 @@ export default function Projects() {
 
             <div  className="text-white h-fit text-center py-16 2xl:w-[96rem] 2xl:m-auto">
                 <Title title1="Latest" title2="Projects" />
-                <div className="flex justify-start flex-wrap  md:w-[95%] lg:w-[64rem] xl:w-[74rem] 2xl:w-[90rem] m-auto md:pl-7 lg:pl-3 mt-11 w-[90%]">
+                <div className="flex justify-start flex-wrap  md:w-[95%] lg:w-[64rem] xl:w-[74rem] 2xl:w-[90rem] m-auto md:pl-7 lg:pl-3 mt-11 w-[85%] ">
                     {projects.map((item, id) => (
                         <div key={id}
-                            className="relative group md:m-3 xmd:m-4 bg-gray md:w-[45%] lg:w-[30%] md:h-[50%] rounded-lg shadow-effect overflow-hidden my-4  "
+                            className="relative border w-[100%]  group md:m-3 xmd:m-4 bg-gray md:w-[45%] lg:w-[30%]  md:h-[50%] rounded-lg shadow-effect overflow-hidden my-4  "
                         >
                             {/* Image */}
                             <Image
@@ -37,10 +37,10 @@ export default function Projects() {
 
                             {/* show on hover */}
                             <div className="absolute inset-0 bg-gradient-to-t from-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center text-center p-1 xs:p-2  sm:px-5 md:p-2">
-                                <h3 className="text-white text-lg lg:text-lg font-bold xs:text-3xl  2xl:text-3xl ">{item.subtitle}</h3>
-                                <p className="text-white text-[11px] text-sm lg:mt-0 xs:text-[18px] my-1 xs:my-4 md:my-1 md:text-sm lg:my-0 lg:leading-4 xl:my-2 2xl:text-lg">{item.detail}</p>
+                                <h3 className="text-white text-2xl font-bold xs:text-4xl sm:text-5xl md:text-3xl  2xl:text-4xl ">{item.subtitle}</h3>
+                                <p className="text-white text-sm lg:mt-0 xs:text-[18px] my-2 xs:my-5 sm:text-lg sm:my-7 md:my-1 md:text-md lg:my-0 lg:leading-6 xl:my-4 xl:text-[14px] 2xl:text-lg">{item.detail}</p>
                                 <Link href={item.link} target="_blank">
-                                    <IoMdOpen className="w-[36px] h-[36px] rounded-full p-2 bg-white text-black sm:mt-1 lg:mt-0 hover:bg-gray-200 transition" />
+                                    <IoMdOpen className="w-[36px] h-[36px] sm:w-[50px] sm:h-[50px] md:w-[36px] md:h-[36px] xl:w-[50px] xl:h-[50px] rounded-full p-2 bg-white text-black sm:mt-1 lg:mt-0 hover:bg-gray-200 transition" />
                                 </Link>
                             </div>
                         </div>
