@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { IoMdOpen } from "react-icons/io";
 import Title from '@/app/components/title/Title'
 import luxeurs from "../../assets/lux.PNG"
-import social from "../../assets/social.png"
+import social from "../../assets/social.PNG"
 import dine from "../../assets/dine.PNG"
-import notes from "../../assets/notes.png"
+import notes from "../../assets/notes.PNG"
 import rmc1 from "../../assets/race.PNG"
 
 export default function Projects() {
