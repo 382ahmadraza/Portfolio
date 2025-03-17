@@ -7,7 +7,7 @@ const TypingEffect = () => {
       And I'm a{" "}
       <span className="text-cyan-300 ">
         <Typewriter
-          words={["Frontend Developer","UI/UX Designer"]}
+          words={["Frontend Developer"]}
           loop={true}
           cursor
           cursorStyle="|"

@@ -1,3 +1,4 @@
+"use client"
 import "@fontsource/poppins";
 import "@fontsource/poppins/700.css";
 import Navbar from "./common/navbar/Navbar";
@@ -11,10 +12,8 @@ import Footer from "./common/footer/Footer";
 
 export default function Home() {
 
-
-
   return (
-    <div className="font-poppins">
+    <div  className="font-poppins ">
       <Navbar />
       <HeroSection />
       <About />

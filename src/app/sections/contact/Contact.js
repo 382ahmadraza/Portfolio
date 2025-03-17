@@ -9,10 +9,15 @@ import { RiTwitterFill } from "react-icons/ri";
 import { FaGithub } from "react-icons/fa";
 import { ImLinkedin2 } from "react-icons/im";
 import Link from 'next/link';
+import { motion } from 'framer-motion'
 
 export default function Contact() {
     return (
-        <div id='contact' className=' text-white h-fit text-center py-11 bg-gray  '>
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }} 
+        id='contact' className=' text-white h-fit text-center py-11 bg-gray  '>
             <Title title1="Get In" title2="Touch!" />
 
             <div className='flex justify-evenly flex-wrap w-[95%] text-sm md:text-md 2xl:w-[93rem] m-auto  mt-11   '>
@@ -79,6 +84,6 @@ export default function Contact() {
 
                 </form>
             </div>
-        </div>
+        </motion.div>
     )
 }

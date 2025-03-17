@@ -5,7 +5,7 @@ import Title from '@/app/components/title/Title'
 import ahmadOutline from "../../assets/outline1.png"
 import { useState } from 'react'
 import Subtitle from '@/app/components/subtitle/Subtitle'
-
+import { motion } from 'framer-motion'
 
 export default function About() {
 
@@ -14,10 +14,21 @@ export default function About() {
     return (
         <div className='bg-gray'>
             <div id='about' className='flex flex-wrap flex-col-reverse md:flex-row md:flex-nowrap md:px-2 justify-evenly items-center text-white h-fit py-11 sm:py-11 2xl:w-[96rem] 2xl:m-auto'>
-            <div className='w-[90%] sm:w-[60%] md:w-[40%] lg:w-[40%] h-[85%] m-auto md:m-0 '>
+            <motion.div
+                whileInView={{ y: [0, -20, 0] , opacity:1 }}  
+                transition={{
+                  duration: 2,  
+                  repeat: Infinity, 
+                  ease: "easeInOut",  
+                }}
+            className='w-[90%] sm:w-[60%] md:w-[40%] lg:w-[40%] h-[85%] m-auto md:m-0 '>
                 <Image src={ahmadOutline} alt='ahmad' className='bg-gray   '></Image>
-            </div>
-            <div className='w-[90%] m-auto mt-4 md:m-0 md:w-[54%] lg:w-[40%] h-fit  '>
+            </motion.div>
+            <motion.div 
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }} 
+            className='w-[90%] m-auto mt-4 md:m-0 md:w-[54%] lg:w-[40%] h-fit  '>
                 <Title title1="About" title2="Me" />
                 <Subtitle subtitle="Fronend Developer!" />
                 <p className='my-4 text-slate-200'>
@@ -37,7 +48,7 @@ export default function About() {
 
                 <button onClick={() => setExtra(!extra)} className='p-2 px-4 my-7 hover:text-white shadow-blue shadow-effect bg-blue text-black rounded-full'>{extra ? "Show Less" : "Read More"}</button>
 
-            </div>
+            </motion.div>
 
         </div>
         </div>
