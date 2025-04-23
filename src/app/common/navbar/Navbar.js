@@ -55,7 +55,7 @@ export default function Navbar() {
         <AnimatePresence>
           {toggle && (
             <motion.ul 
-              initial={{ x: "100%" }}
+              initial={{ x: 20 }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.5, ease: "easeOut" }}
