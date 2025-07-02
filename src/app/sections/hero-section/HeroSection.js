@@ -44,15 +44,18 @@ export default function HeroSection() {
                     <Link href={"https://www.twitter.com/in/382ahmadraza"} target='blank' className=' flex items-center justify-center'>
                         <RiTwitterFill />
                     </Link>
-                    <Link href={"https://github.com/382ahmadaraz"} target='blank' className=' flex items-center justify-center '>
+                    <Link href={"https://github.com/382ahmadraza"} target='blank' className=' flex items-center justify-center '>
 
                         <FaGithub />
                     </Link>
-                    <Link href={"https://www.linkedin.com/in/ahmad-raza161"} target='blank' className=' flex items-center justify-center '>
+                    <Link href={"https://www.linkedin.com/in/ahmad-raza-161"} target='blank' className=' flex items-center justify-center '>
                         <ImLinkedin2 />
                     </Link>
                 </motion.div>
+                <a href='/assets/Resume.pdf' download={'AhmadRaza-CV.pdf'} className='mt-7'>
+
                 <Button btn="Download CV" />
+                </a>
             </div>
             <motion.div 
             animate={{ y: [0, -20, 0] , opacity:1 }}  

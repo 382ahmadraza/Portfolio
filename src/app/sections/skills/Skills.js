@@ -12,6 +12,7 @@ import { SiFirebase } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa6";
 import Link from 'next/link';
+import { SiTypescript } from 'react-icons/si';
 import { motion } from 'framer-motion'
 
 export default function Skills() {
@@ -21,11 +22,11 @@ export default function Skills() {
         { id: 3, name: "Bootstrap", image: <FaBootstrap /> },
         { id: 4, name: "Tailwind", image: <RiTailwindCssFill /> },
         { id: 5, name: "Javascript", image: <FaJsSquare /> },
-        { id: 6, name: "React.js", image: <FaReact /> },
-        { id: 7, name: "Next.js", image: <RiNextjsLine /> },
-        { id: 8, name: "Firebase", image: <SiFirebase /> },
-        { id: 9, name: "MongoDB", image: <BiLogoMongodb /> },
-        { id: 10, name: "Github", image: <FaGithub /> },
+        { id: 6, name: "Typescript", image: <SiTypescript /> },
+        { id: 7, name: "React.js", image: <FaReact /> },
+        { id: 8, name: "Next.js", image: <RiNextjsLine /> },
+        { id: 9, name: "Firebase", image: <SiFirebase /> },
+        { id: 10, name: "MongoDB", image: <BiLogoMongodb /> },
 
     ]
 
