@@ -20,7 +20,7 @@ export default function Skills() {
         { id: 1, name: "HTML5", image: <FaHtml5 /> },
         { id: 2, name: "CSS3", image: <FaCss3Alt /> },
         { id: 3, name: "Bootstrap", image: <FaBootstrap /> },
-        { id: 4, name: "Tailwind", image: <RiTailwindCssFill /> },
+        { id: 4, name: "Tailwind CSS", image: <RiTailwindCssFill /> },
         { id: 5, name: "Javascript", image: <FaJsSquare /> },
         { id: 6, name: "Typescript", image: <SiTypescript /> },
         { id: 7, name: "React.js", image: <FaReact /> },

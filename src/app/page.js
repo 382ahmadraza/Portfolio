@@ -11,7 +11,6 @@ import Contact from "./sections/contact/Contact";
 import Footer from "./common/footer/Footer";
 
 export default function Home() {
-
   return (
     <div  className="font-poppins ">
       <Navbar />
